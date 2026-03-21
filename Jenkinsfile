@@ -30,7 +30,7 @@ pipeline {
                 sh 'javac program3.java'
 
                 // Run the compiled Java class
-                sh 'java HelloWorld'
+                sh 'java program3'
             }
         }
     }
