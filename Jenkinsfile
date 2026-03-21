@@ -23,6 +23,16 @@ pipeline {
                 sh 'python3 program1.py'
             }
         }
+
+        stage('Run Java Program') {
+            steps {
+                // Compile the Java file (adjust filename as needed)
+                sh 'javac program3.java'
+
+                // Run the compiled Java class
+                sh 'java HelloWorld'
+            }
+        }
     }
 
     post {
