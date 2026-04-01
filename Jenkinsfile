@@ -4,7 +4,7 @@ pipeline {
     environment {
         SONAR_HOST_URL = "http://localhost:9000"
         SONAR_PROJECT_KEY = "PracticeProject"
-        SONAR_TOKEN = credentials('sqp_cb651a2c9d0b2fe539675ae5443ebfac21d6cca9')   // Add this token in Jenkins Credentials
+        SONAR_TOKEN = credentials('SONAR_TOKEN')   // Add this token in Jenkins Credentials
     }
 
     stages {
